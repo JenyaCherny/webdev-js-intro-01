@@ -6,11 +6,11 @@ const bookAnswerEl = document.getElementById("book-answer")
 const activityAnswerEl = document.getElementById("activity-answer")
 const submissionBtn = document.getElementById("submission-btn")
 
+const book = "War and Peace";
+// Declare a constant variable named "book" and assign 
+//the name of your favorite book to that variable in js.
 
-// Declare a constant variable named "book" and assign
-// the name of your favorite book to that variable.
-
-
+let activity = "gardening";
 // Declare a mutable variable named "activity" and assign
 // an activity to it.
 
@@ -19,18 +19,19 @@ const submissionBtn = document.getElementById("submission-btn")
 function updateBookSentence() {
     // Sets the text inside the element with the id of book answer. 
     // innerText is one of many properties on a HTML element.
-    bookAnswerEl.innerText = book
+    bookAnswerEl.innerText = book;
 }
 
 function updateActivitySentence() {
     // Update this function 
     // (hint: it will be similiar to the previous function)
-
+activityAnswerEl.innerText = activity;
 }
 
 function render() {
     // Finish writing this function
     updateBookSentence();
+    updateActivitySentence();
 
 }
 
